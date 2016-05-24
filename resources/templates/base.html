@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{% block title %}title{% endblock %}</title>
+		<link href="/commons/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<script src="/commons/js/jquery.min.js" type="text/javascript"></script>
+		<script src="/commons/js/angular.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a href="/" class="brand">Clojure Demo</a>
+						<ul class="nav">
+							<li class="active"><a href="javascript:void(0);">Home</a></li>
+							<li><a href="https://github.com/vermisse">Source</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="row" style="height: 42px"></div>
+			{% block body %}body{% endblock %}
+		</div>
+	
+		<div id="footer" class="container">
+			<div class="row">
+				<div class="span12">
+					<hr />
+					<p>Copyright &copy; 2016 <a href="https://github.com/vermisse" target="_blank">Vermisse</a></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

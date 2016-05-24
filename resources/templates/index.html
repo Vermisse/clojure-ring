@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block body %}
+<div class="row">
+	<div class="span12">
+		<h3>{{ name }}</h3>
+		{% for i in info %}
+		<p>
+			<a href="/{{ i.id }}">{{ i.info_key }}:{{ i.info_value }}</a>
+		</p>
+		{% endfor %}
+		<form method="post">
+			<p>key:</p><input name="key" />
+			<p>value:</p><input name="value" />
+			<p><button type="submit" class="btn btn-primary">Add</button></p>
+		</form>
+	</div>
+</div>
+{% endblock %}

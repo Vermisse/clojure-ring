@@ -1,0 +1,1 @@
+([:dependencies ([org.clojure/clojure "1.6.0"] [org.clojure/java.jdbc "0.3.6"] [ring/ring "1.4.0"] [ring/ring-json "0.3.1"] [compojure/compojure "1.2.1"] [selmer/selmer "0.7.2"] [mysql/mysql-connector-java "5.1.29"] [korma/korma "0.3.0"])])
