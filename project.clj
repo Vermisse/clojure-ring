@@ -1,8 +1,4 @@
 (defproject web "1.0.0" ;Maven在Clojure中的实现方式
-  :description "FIXME: write description"
-  :url "https://github.com/vermisse"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"] ;设置clojure版本
                  [org.clojure/java.jdbc "0.3.6"] ;加载jdbc模块
                  [ring "1.4.0"] ;加载ring框架
